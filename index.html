@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauntech - Scan Anything. Understand Everything.</title>
+    <meta name="description" content="Kauntech - AI-powered OCR app for scanning business cards, documents, and signs. Translate in 50+ languages and auto-export to Excel, WhatsApp, Email, Telegram.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Languages Background -->
+    <div class="floating-languages-container" id="floatingLanguages"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">K</span>
+            <span class="logo-text">Kauntech</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#translate">Translate</a></li>
+            <li><a href="#scan">Scan</a></li>
+            <li><a href="#automation">Automation</a></li>
+            <li><a href="#download" class="nav-cta">Get the App</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#translate">Translate</a></li>
+            <li><a href="#scan">Scan</a></li>
+            <li><a href="#automation">Automation</a></li>
+            <li><a href="#download">Get the App</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-orb"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge-container">
+                    <span class="badge badge-purple">Made in India</span>
+                    <span class="badge badge-gold">50+ Languages</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Scan Anything.</span>
+                    <span class="title-line highlight">Understand Everything.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Business cards, documents, and signs—translated and organized in seconds. 
+                    AI-powered OCR with auto-export to Excel, WhatsApp, Email & Telegram.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">99</span>
+                        <span class="stat-label">Free Scans</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Scan Modes</span>
+                    </div>
+                </div>
+                <div class="hero-ctas">
+                    <a href="#download" class="btn btn-primary">
+                        <span class="btn-icon">📱</span>
+                        Get the App
+                    </a>
+                    <a href="#features" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <span class="app-title">Visitor Card Scan</span>
+                            <div class="app-stats">
+                                <div class="app-stat">
+                                    <span class="app-stat-number">10</span>
+                                    <span class="app-stat-label">Scanned</span>
+                                </div>
+                                <div class="app-stat">
+                                    <span class="app-stat-number">0</span>
+                                    <span class="app-stat-label">Pending</span>
+                                </div>
+                                <div class="app-stat">
+                                    <span class="app-stat-number">10</span>
+                                    <span class="app-stat-label">Uploaded</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-tabs">
+                            <div class="app-tab active">
+                                <span class="tab-icon">📷</span>
+                                <span>Business Card</span>
+                            </div>
+                            <div class="app-tab">
+                                <span class="tab-icon">🔲</span>
+                                <span>QR Code</span>
+                            </div>
+                            <div class="app-tab">
+                                <span class="tab-icon">✏️</span>
+                                <span>Manual</span>
+                            </div>
+                        </div>
+                        <div class="app-scan-area">
+                            <div class="camera-icon">📷</div>
+                            <p class="scan-text">Ready to Scan Business Cards</p>
+                            <p class="scan-subtext">Position the card in frame and capture</p>
+                            <button class="scan-btn">Open Camera</button>
+                            <button class="gallery-btn">Gallery</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="floating-card-icon">🎯</span>
+                    <span class="floating-card-text">Auto-detect Language</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="floating-card-icon">🔄</span>
+                    <span class="floating-card-text">Real-time Sync</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="floating-card-icon">🤖</span>
+                    <span class="floating-card-text">AI Powered</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Mosaic Section -->
+    <section class="features" id="features">
+        <div class="section-label">CAPABILITIES</div>
+        <div class="features-grid">
+            <div class="feature-card feature-card-large">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">📇</span>
+                </div>
+                <h3 class="feature-title">Scan Cards, Docs & Signs</h3>
+                <p class="feature-desc">
+                    OCR that works on curved cards, glossy paper, and handwritten notes. 
+                    Capture business cards, A4 documents, and shop boards with precision.
+                </p>
+                <div class="feature-visual">
+                    <div class="scan-demo">
+                        <div class="scan-line"></div>
+                        <div class="doc-preview">
+                            <div class="doc-line"></div>
+                            <div class="doc-line short"></div>
+                            <div class="doc-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card feature-card-top">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">🌐</span>
+                </div>
+                <h3 class="feature-title">Translate Instantly</h3>
+                <p class="feature-desc">
+                    50+ languages, offline-ready. From Hindi to Tamil, Bengali to Gujarati—
+                    understand every word in your language.
+                </p>
+                <div class="language-bubbles">
+                    <span class="lang-bubble">हिन्दी</span>
+                    <span class="lang-bubble">தமிழ்</span>
+                    <span class="lang-bubble">తెలుగు</span>
+                    <span class="lang-bubble">മലയാളം</span>
+                    <span class="lang-bubble">ಕನ್ನಡ</span>
+                    <span class="lang-bubble">+45</span>
+                </div>
+            </div>
+            <div class="feature-card feature-card-bottom">
+                <div class="feature-icon-wrap">
+                    <span class="feature-icon">📤</span>
+                </div>
+                <h3 class="feature-title">Export Anywhere</h3>
+                <p class="feature-desc">
+                    Sheets, email, WhatsApp, Telegram—automated. Your scanned data goes 
+                    exactly where you need it.
+                </p>
+                <div class="export-icons">
+                    <div class="export-icon">
+                        <span>📊</span>
+                        <small>Sheets</small>
+                    </div>
+                    <div class="export-icon">
+                        <span>📧</span>
+                        <small>Email</small>
+                    </div>
+                    <div class="export-icon">
+                        <span>💬</span>
+                        <small>WhatsApp</small>
+                    </div>
+                    <div class="export-icon">
+                        <span>✈️</span>
+                        <small>Telegram</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Translate Section -->
+    <section class="translate-section" id="translate">
+        <div class="translate-content">
+            <div class="translate-text">
+                <span class="section-badge">INSTANT TRANSLATE</span>
+                <h2 class="section-title">Read Any Sign in Seconds.</h2>
+                <p class="section-desc">
+                    Point your camera at menus, boards, and labels—get a clean translation 
+                    without retyping. Perfect for exhibitions, networking events, and travel.
+                </p>
+                <ul class="feature-list">
+                    <li>
+                        <span class="list-icon">⚡</span>
+                        <span>Works offline - no internet needed</span>
+                    </li>
+                    <li>
+                        <span class="list-icon">📐</span>
+                        <span>Works at an angle - tilted text detection</span>
+                    </li>
+                    <li>
+                        <span class="list-icon">🌙</span>
+                        <span>Works in low light - night mode OCR</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="translate-visual">
+                <div class="translate-card">
+                    <div class="original-text">
+                        <span class="text-label">Detected</span>
+                        <p class="text-content">व्यापार कार्ड स्कैनर</p>
+                    </div>
+                    <div class="arrow-down">⬇️</div>
+                    <div class="translated-text">
+                        <span class="text-label">Translated</span>
+                        <p class="text-content">Business Card Scanner</p>
+                    </div>
+                    <div class="language-indicator">
+                        <span class="lang-from">Hindi</span>
+                        <span class="lang-arrow">→</span>
+                        <span class="lang-to">English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scan Section -->
+    <section class="scan-section" id="scan">
+        <h2 class="section-title-center">Scan Anything.</h2>
+        <div class="scan-grid">
+            <div class="scan-card">
+                <div class="scan-card-image">
+                    <div class="doc-mockup">
+                        <div class="doc-page">
+                            <div class="doc-header"></div>
+                            <div class="doc-body">
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                                <div class="doc-line short"></div>
+                            </div>
+                        </div>
+                        <div class="doc-page stacked">
+                            <div class="doc-header"></div>
+                            <div class="doc-body">
+                                <div class="doc-line"></div>
+                                <div class="doc-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scan-card-content">
+                    <h3>Multi-page Documents</h3>
+                    <p>Scan A4 documents, contracts, and forms with automatic page detection.</p>
+                </div>
+            </div>
+            <div class="scan-card">
+                <div class="scan-card-image">
+                    <div class="card-mockup">
+                        <div class="business-card">
+                            <div class="card-logo">VT</div>
+                            <div class="card-info">
+                                <div class="card-name">VoltAir Tech</div>
+                                <div class="card-company">Kauntech Partner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scan-card-content">
+                    <h3>IDs & Business Cards</h3>
+                    <p>Extract contact info instantly from visiting cards and ID documents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Flow Section -->
+    <section class="automation-section" id="automation">
+        <div class="automation-orb"></div>
+        <h2 class="section-title-center">Scan → Detect → Translate → Send</h2>
+        <div class="automation-flow">
+            <div class="flow-step">
+                <div class="step-number">1</div>
+                <div class="step-icon">📷</div>
+                <h3 class="step-title">Scan</h3>
+                <p class="step-desc">Point and capture any document or card.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-number">2</div>
+                <div class="step-icon">🔍</div>
+                <h3 class="step-title">Detect</h3>
+                <p class="step-desc">OCR reads text instantly with AI precision.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-number">3</div>
+                <div class="step-icon">🌐</div>
+                <h3 class="step-title">Translate</h3>
+                <p class="step-desc">Get it in your preferred language.</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+                <div class="step-number">4</div>
+                <div class="step-icon">📤</div>
+                <h3 class="step-title">Send</h3>
+                <p class="step-desc">To Sheets, email, WhatsApp, or Telegram.</p>
+            </div>
+        </div>
+        <div class="automation-features">
+            <div class="auto-feature">
+                <span class="auto-icon">⚡</span>
+                <span class="auto-text">Lightning Fast</span>
+            </div>
+            <div class="auto-feature">
+                <span class="auto-icon">🔒</span>
+                <span class="auto-text">Secure & Private</span>
+            </div>
+            <div class="auto-feature">
+                <span class="auto-icon">🤖</span>
+                <span class="auto-text">AI Powered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="download-section" id="download">
+        <div class="download-content">
+            <div class="download-text">
+                <h2 class="download-title">Get Kauntech Free.</h2>
+                <p class="download-subtitle">
+                    99 scans per account. Sync to Google Sheets & Telegram. 
+                    Upgrade to unlock AI automation.
+                </p>
+                <ul class="download-features">
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <span>OCR for cards, docs, and signs</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <span>50+ languages supported</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <span>Auto-export to Sheets, Email, WhatsApp, Telegram</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <span>99 free scans per account</span>
+                    </li>
+                </ul>
+                <div class="download-buttons">
+                    <a href="#" class="store-btn app-store">
+                        <span class="store-icon">🍎</span>
+                        <div class="store-text">
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn play-store">
+                        <span class="store-icon">🤖</span>
+                        <div class="store-text">
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+                <p class="no-card">No credit card required.</p>
+            </div>
+            <div class="download-visual">
+                <div class="cta-card">
+                    <div class="cta-card-header">
+                        <span class="cta-badge">FREE</span>
+                        <span class="cta-plan">Starter</span>
+                    </div>
+                    <div class="cta-card-price">
+                        <span class="price">₹0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="cta-features">
+                        <li>99 scans</li>
+                        <li>Google Sheets sync</li>
+                        <li>Telegram export</li>
+                        <li>Basic OCR</li>
+                    </ul>
+                    <button class="cta-btn">Get Started</button>
+                </div>
+                <div class="cta-card premium">
+                    <div class="cta-card-header">
+                        <span class="cta-badge premium-badge">PRO</span>
+                        <span class="cta-plan">Automation AI</span>
+                    </div>
+                    <div class="cta-card-price">
+                        <span class="price">₹499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="cta-features">
+                        <li>Unlimited scans</li>
+                        <li>WhatsApp automation</li>
+                        <li>Email automation</li>
+                        <li>Excel export</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="cta-btn premium-btn">Upgrade Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">K</span>
+                    <span class="logo-text">Kauntech</span>
+                </div>
+                <p class="footer-tagline">Scan anything. Understand everything.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📸</a>
+                    <a href="#" class="social-link">💼</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#translate">Translate</a></li>
+                        <li><a href="#scan">Scan</a></li>
+                        <li><a href="#automation">Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kauntech. All rights reserved. Made with ❤️ in India.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
